@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <section class="booking">
+        <div>
+            <h2>We have booking facilities</h2>
+            <button class="btn2">Book Now</button>
+
+            <img id="star" src="img3/stars.png" alt="">
+            <img id="cloud" src="img3/cloud_layer.png" alt="">
+            <img id="build2" src="img3/building_layer2.png" alt="">
+            <img id="build1" src="img3/building_layer1.png" alt="">
+            <img id="tree" src="img3/tree_layer.png" alt="">
+            <img id="table" src="img3/table_layer.png" alt="">
+            <img id="moon" src="img3/moon.png" alt="">
+
+        </div>
+    </section>
+    <script>
+        let cream_bg = document.getElementById('cream_bg');
+        let orange_bg = document.getElementById('orange_bg');
+        let chapaati = document.getElementById('chapaati');
+        let corns = document.getElementById('corns');
+        let green_chatani = document.getElementById('green_chatani');
+        let red_chatani = document.getElementById('red_chatani');
+        let cookie = document.getElementById('cookie');
+        let soup = document.getElementById('soup');
+        let rice = document.getElementById('rice');
+        let leaf_star = document.getElementById('leaf_star');
+        let leaf_star2 = document.getElementById('leaf_star2');
+
+        let text_bg_slab = document.getElementById('text_bg_slab');
+        let why_so = document.getElementById('why_so');
+        let delicious = document.getElementById('delicious');
+
+        let star = document.getElementById('star');
+        let cloud = document.getElementById('cloud');
+        let build1 = document.getElementById('build1');
+        let build2 = document.getElementById('build2');
+        let tree = document.getElementById('tree');
+        let table = document.getElementById('table');
+        let moon = document.getElementById('moon');
+
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            soup.style.top = value * -0.8 + 350 + 'px';
+            chapaati.style.top = value * -0.2 + 180 + 'px';
+            rice.style.top = value * -0.1 + 10 + 'px';
+            leaf_star2.style.top = value * -0.3 + 430 + 'px';
+            red_chatani.style.top = value * -0.2 + 450 + 'px';
+
+            text_bg_slab.style.top = value * 0.5 + 80 + 'px';
+            why_so.style.top = value * 0.5 + 200 + 'px';
+            delicious.style.top = value * 0.5 + 282 + 'px';
+            table.style.top = value * 0.8 + 'px';
+        })
+    </script>
+</body>
+
+</html>

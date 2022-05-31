@@ -1,0 +1,103 @@
+.booking {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 800px;
+    align-items: center;
+    background: url('img3/sky_bg_layer.png') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.booking div {
+    position: relative;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    width: 1080px;
+    width: 100%;
+    position: relative;
+}
+
+.booking h2 {
+    padding: 20px;
+    margin: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    z-index: 100;
+}
+
+.booking img {
+    position: absolute;
+    top: -300px;
+    left: -160px;
+    width: 130%; 
+    z-index: 1;   
+}
+/* #booking button {
+    z-index: 100;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+} */
+.booking::before {
+    z-index: -20;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-color: #192735;
+}
+
+
+#star{
+    top: -350px;
+}
+#table{
+    z-index: 3;
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    width: 130%; 
+    pointer-events: none;
+}
+
+#moon{
+    top: -600px;
+    z-index: 0;
+}
+/* UTILITY CLASSES */
+.btn {
+    padding: 5px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn2 {
+    z-index: 100;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+}
+
+h2 {
+    /* font-family: 'Londrina Solid'; */
+    font-family: 'Poppins';
+}
+
+p {
+    /* font-family: 'Londrina Solid'; */
+    font-family: 'Poppins';
+}

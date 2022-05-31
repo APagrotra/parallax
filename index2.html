@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <a href="#sec" id="btn">Explore</a>
+        <h2 id="text">COSMOS</h2>
+        <img id="l-1" src="layer-1b.png" alt="">
+        <img id="l-2" src="layer-2.png" alt="">
+        <img id="l-3" src="layer-3.png" alt="">
+        <img id="l-4" src="layer-4.png" alt="">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Effect</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem sequi distinctio aliquam doloremque molestiae, libero ipsa nesciunt, inventore, sapiente similique ut adipisci officia. Quidem beatae a cum, alias, mollitia, at totam incidunt illo nisi inventore veritatis fugiat doloremque eius est suscipit facilis minus iste earum. Error labore nesciunt nihil qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe autem ipsum dolorem explicabo, sed amet neque voluptate illum enim inventore aliquam distinctio accusamus eos quae, cum incidunt tenetur! Odit quia corrupti atque eius. Eligendi commodi asperiores cumque reprehenderit eos animi non veniam? Laborum placeat, assumenda provident eligendi distinctio suscipit non.</p><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem sequi distinctio aliquam doloremque molestiae, libero ipsa nesciunt, inventore, sapiente similique ut adipisci officia. Quidem beatae a cum, alias, mollitia, at totam incidunt illo nisi inventore veritatis fugiat doloremque eius est suscipit facilis minus iste earum. Error labore nesciunt nihil qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe autem ipsum dolorem explicabo, sed amet neque voluptate illum enim inventore aliquam distinctio accusamus eos quae, cum incidunt tenetur! Odit quia corrupti atque eius. Eligendi commodi asperiores cumque reprehenderit eos animi non veniam? Laborum placeat, assumenda provident eligendi distinctio suscipit non.</p><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem sequi distinctio aliquam doloremque molestiae, libero ipsa nesciunt, inventore, sapiente similique ut adipisci officia. Quidem beatae a cum, alias, mollitia, at totam incidunt illo nisi inventore veritatis fugiat doloremque eius est suscipit facilis minus iste earum. Error labore nesciunt nihil qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe autem ipsum dolorem explicabo, sed amet neque voluptate illum enim inventore aliquam distinctio accusamus eos quae, cum incidunt tenetur! Odit quia corrupti atque eius. Eligendi commodi asperiores cumque reprehenderit eos animi non veniam? Laborum placeat, assumenda provident eligendi distinctio suscipit non.</p><br>
+    </div>
+
+    <script>
+        let l1 = document.getElementById('l-1');
+        let l2 = document.getElementById('l-2');
+        let l3 = document.getElementById('l-3');
+        let l4 = document.getElementById('l-4');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            l1.style.top = value * -1 + 'px';
+            l2.style.top = value * 0.1 + 'px';
+            // l2.style.right = value * 0.5 + 'px';
+            l3.style.top = value * 0.5 + 'px';
+            l4.style.top = value * 1 + 'px';
+            // l4.style.left = value * 1 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            // btn.style.top = value + 'px';
+            text.style.marginRight = value * 1.5 + 'px';
+        })
+    </script>
+</body>
+</html>
